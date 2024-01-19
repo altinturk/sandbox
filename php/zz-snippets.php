@@ -21,7 +21,7 @@ $aContext = array(
 );
 $cxContext = stream_context_create($aContext);
 
-$sFile = file_get_contents("http://website.com/path/28.jpg", False, $cxContext);
+$sFile = file_get_contents("http://website.com/path/1.jpg", False, $cxContext);
 file_put_contents("phpget/profile.jpg", file_get_contents("http://website.com/path/photo1.jpg", False, $cxContext));
 
 // imagejpeg($sFile);
